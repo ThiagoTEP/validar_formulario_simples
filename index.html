@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Prática 20 - Formulário</title>
+    <link href="estilos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="caixa0">
+        <h1 id="title-header"> AnPThiL </h1>
+    </div>
+    <div class="caixa1">
+        <br>
+        <form action="" method="" id="Formulario" name="" onsubmit="return validar(this)">
+            <h3>PREENCHA OS SEGUINTES CAMPOS:</h3>
+            <table>
+                <tr>
+                    <td>
+                        <h5>NOME:</h5>
+                    </td>
+                    <td style="font-size:20px;"><input class="textbox" type="text" name="nome" maxlength="50" size="40"
+                            id="nome" value="" placeholder="O seu nome" required> *</td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>MORADA:</h5>
+                    </td>
+                    <td style="font-size:20px;"><input class="textbox" type="text" name="morada" maxlength="80"
+                            size="40" id="morada" value="" placeholder="A sua morada"> </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>TELEMÓVEL:</h5>
+                    </td>
+                    <td style="font-size:20px;"><input class="textbox" type="text" name="telemovel" maxlength="9"
+                            size="9" id="telemovel" value="" placeholder="ex(999-999-999)" required onchange="validtel()" > *
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>IDADE:</h5>
+                    </td>
+                    <td style="font-size:20px;"><input class="textbox" type="text" name="idade" maxlength="2" size="9"
+                            id="idade" value="" placeholder="A sua idade" required onchange="validida()"  > * 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>E-MAIL:</h5>
+                    </td>
+                    <td style="font-size:20px;"><input class="textbox" type="text" name="email" maxlength="50" size="40"
+                            id="email" value="" placeholder="exemplo@email.pt" required onchange="validmail()"> *</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>(*) Os campos marcados com um asterisco são obrigatórios.</p>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <div class="botoes">
+                <input type="submit" name="Botao enviar" class="botao cinza" id="dados" value="ENVIAR" onclick="validdados()">
+                <input type="reset" name="Botao apagar" class="botao cinza" value="APAGAR">
+            </div>
+        </form>
+    </div>
+
+    <script src="validar.js"></script>
+</body>
+
+</html>
